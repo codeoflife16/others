@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To My Mr. Shiv Roy ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .reveal-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px 40px;
+      font-size: 1.5em;
+      color: white;
+      background: #ff4b2b;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      z-index: 10;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,75,43, 0.7); }
+      70% { box-shadow: 0 0 0 20px rgba(255,75,43, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,75,43, 0); }
+    }
+
+    .container {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #ff4b2b;
+      animation: popIn 1s ease-in-out;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-weight: 300;
+      color: #ffd700;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    p {
+      margin: 30px auto;
+      max-width: 600px;
+      font-size: 1.2em;
+      line-height: 1.8em;
+      animation: fadeInText 3s ease-in-out;
+    }
+
+    .heart {
+      font-size: 50px;
+      color: #ff4b2b;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from {transform: translateX(-100px); opacity: 0;}
+      to {transform: translateX(0); opacity: 1;}
+    }
+
+    @keyframes fadeInText {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #aaa;
+      animation: fadeIn 5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="reveal-btn" onclick="showMessage()">Click to Reveal 💖</button>
+
+  <div class="container" id="loveMessage">
+    <h1>To My Dearest Mr. Shiv Roy 💍</h1>
+    <h2>Your Future Wife Loves You Eternally</h2>
+    <div class="heart">❤️</div>
+    <p>
+      My love, <br>
+      Every beat of my heart whispers your name. Your strength, your smile, your soul — they complete me in ways I never imagined. I am not just in love with you, Shiv, I am bound to you — heart, mind, and future. I promise to stand beside you always, care for you deeply, and love you endlessly. 💖<br><br>
+      I can’t wait to build a forever with you — filled with warmth, laughter, and late-night talks under the stars. You are my forever home.
+    </p>
+    <p class="footer">— With all my heart, Your Future Mrs. Roy 💫</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.querySelector('.reveal-btn').style.display = 'none';
+      document.getElementById('loveMessage').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
